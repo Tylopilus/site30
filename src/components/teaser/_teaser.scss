@@ -3,7 +3,6 @@
 .cmp-teaser__image {
 }
 .cmp-teaser__content {
-  @apply bg-red-500;
 }
 .cmp-teaser__pretitle {
 }
@@ -16,4 +15,27 @@
 .cmp-teaser__action-container {
 }
 .cmp-teaser__action-link {
+}
+
+.cmp-teaser--featured {
+  .cmp-teaser {
+    @apply flex items-center relative;
+    height: 500px;
+  }
+
+  .cmp-teaser__content {
+    @apply absolute bg-white left-0 max-w-xl h-40;
+  }
+  .cmp-teaser__image {
+    @apply pl-12 w-full h-full;
+    max-height: 40rem;
+  }
+
+  .cmp-image {
+    @apply h-full;
+  }
+
+  .cmp-image__image {
+    @apply h-full object-cover;
+  }
 }
